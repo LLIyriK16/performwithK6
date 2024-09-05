@@ -1,8 +1,8 @@
 # performwithK6
 ## For instalation K6: 
-* On macOS: brew install k6
-* On Windows: Use Chocolatey: choco install k6
-* On Linux: Use APT: sudo apt install k6
+* On macOS: `brew install k6`
+* On Windows: Use Chocolatey: `choco install k6`
+* On Linux: Use APT: `sudo apt install k6`
 
 ## For running commands K6:
 * for running: `k6 run script.js`
