@@ -6,8 +6,8 @@ const BASE_URL = "https://jsonplaceholder.typicode.com/users";
 
 export const options = {
   stages: [
-    { duration: "5s", target: 10 }, // ramp up
-    { duration: "10s", target: 10 }, // stable
+    { duration: "5s", target: 100 }, // ramp up
+    { duration: "10s", target: 100 }, // stable
     { duration: "5s", target: 0 }, // ramp down
   ],
   thresholds: {
@@ -40,7 +40,7 @@ export default function () {
 
   // POST request: Create a new user
   const newUser = {
-    name: "John Doe",
+    name: "John Doe1",
     username: "johndoe",
     email: "john.doe@example.com",
   };
@@ -53,7 +53,7 @@ export default function () {
     "POST: status was 201": (r) => r.status === 201,
     "POST: user is created": (r) => JSON.parse(r.body).id !== undefined,
   });
-
+  
   if (!postCheck) {
     console.error("POST request failed:", postRes.status_text);
     fail("Stopping test due to POST failure");
