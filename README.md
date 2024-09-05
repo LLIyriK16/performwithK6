@@ -10,9 +10,9 @@
 
 ## About script:
 
-Implemented GET, POST, PUT, DELETE on API https://jsonplaceholder.typicode.com/users
-Implemented error handling on GET, when trying to get a user that doesn't exist
-Implemented stages with ramp up, stable, ramp down parameters
-Implemented thresholds with metrics general http_req_duration, http_req_failed
+- Implemented GET, POST, PUT, DELETE on API https://jsonplaceholder.typicode.com/users
+- Implemented error handling on GET, when trying to get a user that doesn't exist
+- Implemented stages with ramp up, stable, ramp down parameters
+- Implemented thresholds with metrics general http_req_duration, http_req_failed
 
-Could be implemented custom metrics, that will be added to the thresholds, like Counter, Gauge, Trend, Rate
+- Could be implemented custom metrics, that will be added to the thresholds, like Counter, Gauge, Trend, Rate
