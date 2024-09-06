@@ -1,4 +1,7 @@
 # performwithK6
+
+## Test task from Andriy Izyo
+
 ## For instalation K6: 
 * On macOS: `brew install k6`
 * On Windows: Use Chocolatey: `choco install k6`
@@ -16,3 +19,5 @@
 - Implemented thresholds with metrics general http_req_duration, http_req_failed
 - Implemented checks for each request 
 - Could be implemented custom metrics, that will be added to the thresholds, like Counter, Gauge, Trend, Rate
+
+Andriy Izyo
